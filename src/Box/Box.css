@@ -1,0 +1,14 @@
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.block{
+    border: 1px solid black;
+    font-size: 70px;
+    padding: 50px;
+    cursor: pointer;
+    color: wheat;
+}
