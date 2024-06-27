@@ -9,7 +9,13 @@ const App = () => {
   const [choice,setChoice] = useState("")
   console.log(choice)
 
-  
+  const handleClick = () =>{
+  console.log("ddsvfd")
+
+if(choice!==""){
+  setSelectPlayer(!selectPlayer)
+}
+  }
 
   return (
     <div>
@@ -20,11 +26,11 @@ const App = () => {
       ) : (
         selectPlayer ? (
           <div >
-            <Player  choice={choice} setChoice={setChoice}/>
+            <Player onClick={handleClick()}  choice={choice} setChoice={setChoice}/>
           </div>
         ) : (
           <div className='wrapper'>
-          <Box />
+          <Box choice={choice}/>
         </div>
         )
       )}

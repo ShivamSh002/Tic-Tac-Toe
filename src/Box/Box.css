@@ -11,4 +11,30 @@
     padding: 50px;
     cursor: pointer;
     color: wheat;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+
+.boxWrapper{
+    display: flex;
+   gap: 150px;
+}
+
+.disabled{
+    pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.score{
+    font-size: larger;
+}
+
+.redcolor{
+    color : red
+}
+
+.bluecolor{
+    color: blue;
 }
